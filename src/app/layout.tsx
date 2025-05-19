@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Nunito } from "next/font/google";
+import { Poppins, Nunito, Inter } from "next/font/google";
 import "../css/index.css";
 
 const poppins = Poppins({
@@ -10,6 +10,12 @@ const poppins = Poppins({
 
 const nunito = Nunito({
   variable: "--font-nunito",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning
-        className={`${poppins.variable} ${nunito.variable} antialiased font-poppins`}
+        className={`${poppins.variable} ${nunito.variable} ${inter.variable} antialiased font-poppins`}
       >
         {children}
       </body>

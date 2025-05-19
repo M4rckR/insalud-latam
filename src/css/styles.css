@@ -6,6 +6,11 @@
         var(--bg-hero-main);
 }
 
+/* Gradiente de la seccion de sedes */
+.item-sede {
+  background: linear-gradient(88deg, #00324C -0.01%, rgba(0, 190, 180, 0.00) 98.13%);
+}
+
 /* ScroollBar TabSedes */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -16,4 +21,6 @@
     background-color: white;
   border-radius: 4px;
 }
+
+
 

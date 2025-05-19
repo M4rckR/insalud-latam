@@ -5,7 +5,9 @@
     /* Fonts */
     --font-poppins: "Poppins", sans-serif;
     --font-in-nunito: "Nunito", sans-serif;
+    --font-in-inter: "Inter", sans-serif;
 
     /* Colors */
     --color-in-orange: #FFB531;
+    --color-in-blue-dark: #0B1D26;
 }
