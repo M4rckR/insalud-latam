@@ -1,6 +1,5 @@
 import { CarouselItem } from "../ui/carousel"
 import Image from "next/image"
-import Link from "next/link"
 
 
 type CarouselSedeProps = {
@@ -10,7 +9,7 @@ type CarouselSedeProps = {
 }
 
 
-export const CarouselSede = ({name, image, link}: CarouselSedeProps) => {
+export const CarouselSede = ({name, image}: CarouselSedeProps) => {
   return (
       <CarouselItem className="basis-1/2 pl-4">
         <div className="rounded-xl overflow-hidden p-4 relative bg-gradient-to-b from-transparent to-black/50">
