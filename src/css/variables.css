@@ -1,0 +1,11 @@
+@theme {
+    /* Backgrounds */
+    --bg-hero-main: url("/images/hero/hero-background.jpg");
+
+    /* Fonts */
+    --font-poppins: "Poppins", sans-serif;
+    --font-in-nunito: "Nunito", sans-serif;
+
+    /* Colors */
+    --color-in-orange: #FFB531;
+}

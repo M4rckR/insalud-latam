@@ -1,0 +1,19 @@
+/* Gradiente del hero con degradado adicional de abajo hacia arriba */
+.section-hero {
+    background-image: 
+        linear-gradient(to top, rgba(11, 29, 38, 1) 0%, rgba(11, 29, 38, 0) 20%),
+        linear-gradient(2deg, rgba(11, 29, 38, 0.00) 23.17%, #0B1D26 116.09%), 
+        var(--bg-hero-main);
+}
+
+/* ScroollBar TabSedes */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+  border-radius: 4px;
+}
+
