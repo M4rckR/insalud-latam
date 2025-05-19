@@ -1,6 +1,7 @@
 import { sedesData } from "@/data/sedes"
 import { CarouselSede } from "./CarouselSede"
 import { Carousel, CarouselContent } from "../ui/carousel"
+import AutoScroll from "embla-carousel-auto-scroll"
 
 type CarouselSedesProps = {
     activeTab: string
@@ -11,6 +12,10 @@ export const CarouselSedes = ({activeTab}: CarouselSedesProps) => {
   return (
                 
     <Carousel
+      plugins={[AutoScroll({
+        stopOnInteraction: false,
+        speed: 1,
+      })]}
       opts={{
         loop: true,
         align: "start",
