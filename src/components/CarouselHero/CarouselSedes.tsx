@@ -1,3 +1,5 @@
+'use client'
+
 import { sedesData } from "@/data/sedes";
 import { CarouselSede } from "./CarouselSede";
 import { Carousel, CarouselContent } from "../ui/carousel";
@@ -19,8 +21,9 @@ export const CarouselSedes = ({ activeTab }: CarouselSedesProps) => {
           }),
         ]}
         opts={{
-          loop: true,
-          align: "start",
+          align: 'center',
+          containScroll: 'trimSnaps',
+          loop: true
         }}
       >
         <CarouselContent className="-ml-6">

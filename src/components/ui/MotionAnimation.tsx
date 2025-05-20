@@ -1,7 +1,7 @@
 // src/components/ui/MotionAnimation.tsx
 'use client'
 
-import { ReactNode, useRef, useEffect, useState } from 'react'
+import { ReactNode, useRef } from 'react'
 import { motion, useInView, Variants } from 'framer-motion'
 
 interface MotionAnimationProps {
@@ -11,6 +11,8 @@ interface MotionAnimationProps {
   duration?: number
   variants?: Variants
   animation?: 'fadeIn' | 'slideUp' | 'slideDown' | 'slideLeft' | 'slideRight' | 'zoom' | 'rotate' | 'bounce'
+  amount?: number
+  once?: boolean
 }
 
 export default function MotionAnimation({ 
@@ -19,11 +21,12 @@ export default function MotionAnimation({
   delay = 0,
   duration = 0.5,
   variants,
-  animation = 'fadeIn'
+  animation = 'fadeIn',
+  amount = 0.2,
+  once = true
 }: MotionAnimationProps) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-  const [shouldAnimate, setShouldAnimate] = useState(false)
+  const isInView = useInView(ref, { once, amount })
   
   // Biblioteca de animaciones predefinidas
   const animations = {
@@ -68,14 +71,6 @@ export default function MotionAnimation({
     }
   }
   
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShouldAnimate(true)
-    }, 100);
-    
-    return () => clearTimeout(timer);
-  }, []);
-  
   // Usar variantes personalizadas o seleccionar de predefinidas
   const selectedVariants = variants || animations[animation]
   
@@ -84,7 +79,7 @@ export default function MotionAnimation({
       ref={ref}
       variants={selectedVariants}
       initial="hidden"
-      animate={(isInView || shouldAnimate) ? "visible" : "hidden"}
+      animate={isInView ? "visible" : "hidden"}
       transition={{ 
         duration, 
         delay,
