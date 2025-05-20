@@ -1,35 +1,41 @@
-import { sedesData } from "@/data/sedes"
-import { CarouselSede } from "./CarouselSede"
-import { Carousel, CarouselContent } from "../ui/carousel"
-import AutoScroll from "embla-carousel-auto-scroll"
+import { sedesData } from "@/data/sedes";
+import { CarouselSede } from "./CarouselSede";
+import { Carousel, CarouselContent } from "../ui/carousel";
+import AutoScroll from "embla-carousel-auto-scroll";
+
 
 type CarouselSedesProps = {
-    activeTab: string
-}
+  activeTab: string;
+};
 
-
-export const CarouselSedes = ({activeTab}: CarouselSedesProps) => {
+export const CarouselSedes = ({ activeTab }: CarouselSedesProps) => {
   return (
-                
-    <Carousel
-      plugins={[AutoScroll({
-        stopOnInteraction: false,
-        speed: 1,
-      })]}
-      opts={{
-        loop: true,
-        align: "start",
-      }}
-    >
-        <CarouselContent className="-ml-4">
-            {sedesData.find((item) => item.id === activeTab)?.sedes.map((item, i) => (
-                <CarouselSede key={i}
-                    name={item.texto}
-                    image={item.imagen}
-                    link={item.link}
-                />
+    <div className="relative carousel-container">
+      <Carousel
+        plugins={[
+          AutoScroll({
+            stopOnInteraction: false,
+            speed: 1,
+          }),
+        ]}
+        opts={{
+          loop: true,
+          align: "start",
+        }}
+      >
+        <CarouselContent className="-ml-6">
+          {sedesData
+            .find((item) => item.id === activeTab)
+            ?.sedes.map((item, i) => (
+              <CarouselSede
+                key={i}
+                name={item.texto}
+                image={item.imagen}
+                link={item.link}
+              />
             ))}
         </CarouselContent>
-    </Carousel>
-  )
-}
+      </Carousel>
+    </div>
+  );
+};
