@@ -3,6 +3,7 @@
 import { TabSedes } from './CarouselHero/TabSedes'
 import SplitText from './ui/SplitText'
 import { useIsMobile } from '@/hooks/isMobile'
+import MotionAnimation from './ui/MotionAnimation'
 
 export const HeroSedes = () => {
   const isMobile = useIsMobile();
@@ -25,9 +26,13 @@ export const HeroSedes = () => {
               )
             }
           </h1>
+          <MotionAnimation animation='slideUp' delay={0}>
             <p className='text-center lg:text-left lg:pr-10'>Contamos con sedes en Perú, Ecuador y Panamá, equipadas con tecnología de última generación y lideradas por especialistas altamente calificados.</p>
+          </MotionAnimation>
         </div>
-        <TabSedes />
+        <MotionAnimation animation='slideUp' delay={0}>
+          <TabSedes />
+        </MotionAnimation>
       </section>
     </div>
   )

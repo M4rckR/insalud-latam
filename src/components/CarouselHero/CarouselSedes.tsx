@@ -4,6 +4,7 @@ import { sedesData } from "@/data/sedes";
 import { CarouselSede } from "./CarouselSede";
 import { Carousel, CarouselContent } from "../ui/carousel";
 import AutoScroll from "embla-carousel-auto-scroll";
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 
 
 type CarouselSedesProps = {
@@ -19,6 +20,7 @@ export const CarouselSedes = ({ activeTab }: CarouselSedesProps) => {
             stopOnInteraction: false,
             speed: 1,
           }),
+          WheelGesturesPlugin()
         ]}
         opts={{
           align: 'center',

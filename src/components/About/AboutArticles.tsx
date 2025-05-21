@@ -16,7 +16,7 @@ export const AboutArticle = () => {
       </article>
       <article className="flex items-center md:justify-center gap-4 text-white item-about py-6 px-6 rounded-xl">
         <Image
-          src="/svg/about/icon-medico.svg"
+          src="/svg/about/icon-tecnologia.svg"
           alt="icono tecnologia"
           width={64}
           height={64}
@@ -27,7 +27,7 @@ export const AboutArticle = () => {
       </article>
       <article className="flex items-center md:col-span-2 lg:col-span-1 md:justify-center gap-4 text-white item-about py-6 px-6 rounded-xl">
         <Image
-          src="/svg/about/icon-medico.svg"
+          src="/svg/about/icon-asistencia.svg"
           alt="icono tecnologia"
           width={64}
           height={64}

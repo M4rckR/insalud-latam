@@ -1,10 +1,10 @@
-export interface Subsede {
+export type Subsede = {
     texto: string;
     imagen: string;
     link: string;
   }
   
-  export interface Sede {
+  export type Sede = {
     id: string;
     nombre: string;
     sedes: Subsede[];
