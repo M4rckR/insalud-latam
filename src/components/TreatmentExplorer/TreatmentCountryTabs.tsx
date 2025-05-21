@@ -19,18 +19,18 @@ export const TreatmentCountryTabs = () => {
         <p className='text-white font-medium'>Encuentra tu sede</p>
         <div className='text-white flex gap-4 md:gap-6'>
             <Badge 
-            className={`bg-transparent border border-in-white px-4 w-16 md:w-20 cursor-pointer rounded-full ${location.country === 'PE' ? 'border-in-orange' : ''}`}
-            onClick={() => setLocation({country: 'PE'})}
+            className={`bg-transparent border border-in-white px-4 w-16 md:w-20 cursor-pointer rounded-full ${location === 'PE' ? 'border-in-orange' : ''}`}
+            onClick={() => setLocation(location)}
             >Perú
             </Badge>
             <Badge 
-            className={`bg-transparent border border-in-white px-4 w-16 md:w-20 cursor-pointer rounded-full ${location.country === 'EC' ? 'border-in-orange' : ''}`}
-            onClick={() => setLocation({country: 'EC'})}
+            className={`bg-transparent border border-in-white px-4 w-16 md:w-20 cursor-pointer rounded-full ${location === 'EC' ? 'border-in-orange' : ''}`}
+            onClick={() => setLocation(location)}
             >Ecuador
             </Badge>
             <Badge 
-            className={`bg-transparent border border-in-white px-4 py-1 w-16 md:w-20 cursor-pointer rounded-full ${location.country === 'PA' ? 'border-in-orange' : ''}`}
-            onClick={() => setLocation({country: 'PA'})}
+            className={`bg-transparent border border-in-white px-4 py-1 w-16 md:w-20 cursor-pointer rounded-full ${location === 'PA' ? 'border-in-orange' : ''}`}
+            onClick={() => setLocation(location)}
             >Panamá
             </Badge>
         </div>

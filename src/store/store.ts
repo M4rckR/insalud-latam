@@ -1,28 +1,26 @@
 import { getLocation } from '@/services';
-import { Location } from './../types/location';
+import { Country } from './../types/location';
 import { create } from 'zustand'
 import { createJSONStorage, devtools, persist } from 'zustand/middleware'
 
 type TreatmentState = {
-    location: Location
+    location: Country
     isLoading: boolean
     fetchLocation: () => Promise<void>
-    setLocation: (location: Location) => void
+    setLocation: (location: Country) => void
 }
 
 export const useTreatmentStore = create<TreatmentState>()(
     devtools(
         persist((set) =>({
-            location: {
-                country: "PE",
-            },
+            location: "PE",
             isLoading: false,
             fetchLocation: async () => {
                 set({isLoading: true})
                 const location = await getLocation()
                 set({location, isLoading: false})
             },
-            setLocation: (location: Location) => set({location}),
+            setLocation: (location: Country) => set({location}),
         }),
         {
             name: 'treatment-store',
