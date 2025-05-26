@@ -2,6 +2,7 @@ import { HeroSedes } from "@/components/HeroSedes";
 import { MainHeader } from "@/components/MainHeader";
 import { AboutMain } from "@/components/About/AboutMain";
 import { TreatmentExplorer } from "@/components/TreatmentExplorer/TreatmentExplorer";
+import { CarouselReviews } from "@/components/CarouselReviews/CarouselReviews";
 export default function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <AboutMain />
         <TreatmentExplorer />
+        <CarouselReviews />
       </main>
      
     </>

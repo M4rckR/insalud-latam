@@ -20,17 +20,17 @@ export const TreatmentCountryTabs = () => {
         <div className='text-white flex gap-4 md:gap-6'>
             <Badge 
             className={`bg-transparent border border-in-white px-4 w-16 md:w-20 cursor-pointer rounded-full ${location === 'PE' ? 'border-in-orange' : ''}`}
-            onClick={() => setLocation(location)}
+            onClick={() => setLocation("PE")}
             >Perú
             </Badge>
             <Badge 
             className={`bg-transparent border border-in-white px-4 w-16 md:w-20 cursor-pointer rounded-full ${location === 'EC' ? 'border-in-orange' : ''}`}
-            onClick={() => setLocation(location)}
+            onClick={() => setLocation("EC")}
             >Ecuador
             </Badge>
             <Badge 
             className={`bg-transparent border border-in-white px-4 py-1 w-16 md:w-20 cursor-pointer rounded-full ${location === 'PA' ? 'border-in-orange' : ''}`}
-            onClick={() => setLocation(location)}
+            onClick={() => setLocation("PA")}
             >Panamá
             </Badge>
         </div>
