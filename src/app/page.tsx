@@ -2,7 +2,10 @@ import { HeroSedes } from "@/components/HeroSedes";
 import { MainHeader } from "@/components/MainHeader";
 import { AboutMain } from "@/components/About/AboutMain";
 import { TreatmentExplorer } from "@/components/TreatmentExplorer/TreatmentExplorer";
-import { CarouselReviews } from "@/components/CarouselReviews/CarouselReviews";
+import { CarouselReview } from "@/components/CarouselReviews/CarouselReview";
+import { CarouselStaf } from "@/components/CarouselStaf/CarouselStaf";
+import { DropContent } from "@/components/DropDownQuestions/DropContent";
+import { CtaContactEmail } from "@/components/CtaContactEmail/CtaContactEmail";
 export default function Home() {
   return (
     <>
@@ -11,14 +14,17 @@ export default function Home() {
 
         <header className="relative z-10">
           <MainHeader />
-          <HeroSedes />
+          <HeroSedes/>
         </header>
 
      </div>
       <main>
         <AboutMain />
         <TreatmentExplorer />
-        <CarouselReviews />
+        <CarouselReview />
+        <CarouselStaf />
+        <DropContent />
+        <CtaContactEmail />
       </main>
      
     </>
