@@ -18,7 +18,7 @@ export const CtaContactEmail = () => {
                                 src="/svg/form-cta/icons-send.svg"
                                 alt="icon-send"
                                 width={24}
-                                height={24}
+                                height={24} 
                             />
                         </div>
                     </div>
