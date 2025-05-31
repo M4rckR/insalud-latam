@@ -6,18 +6,23 @@ import { CarouselReview } from "@/components/CarouselReviews/CarouselReview";
 import { CarouselStaf } from "@/components/CarouselStaf/CarouselStaf";
 import { DropContent } from "@/components/DropDownQuestions/DropContent";
 import { CtaContactEmail } from "@/components/CtaContactEmail/CtaContactEmail";
+import { BtnWsp } from "@/components/ui/BtnWsp";
+
 export default function Home() {
   return (
     <>
       <div className="section-hero bg-cover bg-top">
         <div className="absolute inset-0 bg-black/30"></div>
 
-        <header className="relative z-10">
-          <MainHeader />
-          <HeroSedes/>
-        </header>
+      <header className="relative z-10">
+        <MainHeader />
+        <HeroSedes/>
+      </header>
 
      </div>
+
+
+     
       <main>
         <AboutMain />
         <TreatmentExplorer />
@@ -26,7 +31,7 @@ export default function Home() {
         <DropContent />
         <CtaContactEmail />
       </main>
-     
+      <BtnWsp />
     </>
   );
 }

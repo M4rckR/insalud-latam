@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Nunito, Inter } from "next/font/google";
 import "../css/index.css";
+import { Footer } from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -37,6 +38,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${nunito.variable} ${inter.variable} antialiased font-poppins`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

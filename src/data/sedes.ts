@@ -27,19 +27,19 @@ export const sedesData: SedesData = [
     nombre: "Perú",
     sedes: [
       {
-        texto: "Lima",
+        texto: "Golf",
         imagen: "/images/hero/sedes/peru/sede-golf.png",
-        link: "/sedes/peru-lima"
+        link: "https://insalud.pe/"
       },
       {
-        texto: "Arequipa",
-        imagen: "/images/hero/sedes/peru/sede-sur.png",
-        link: "/sedes/peru-arequipa"
-      },
-      {
-        texto: "Trujillo",
+        texto: "Sur",
         imagen: "/images/hero/sedes/peru/sede-jesus-maria.png",
-        link: "/sedes/peru-trujillo"
+        link: "https://insalud.pe/"
+      },
+      {
+        texto: "Pershing",
+        imagen: "/images/hero/sedes/peru/sede-sur.png",
+        link: "https://insalud.pe/"
       }
     ]
   },
@@ -49,19 +49,24 @@ export const sedesData: SedesData = [
     sedes: [
       {
         texto: "Quito",
-        imagen: "/images/hero/sedes/peru/sede-golf.png",
+        imagen: "/images/hero/sedes/ecuador/sede-quito.png",
         link: "/sedes/ecuador-quito"
       },
       {
         texto: "Guayaquil",
-        imagen: "/images/hero/sedes/peru/sede-sur.png",
+        imagen: "/images/hero/sedes/ecuador/sede-guayaquil.png",
         link: "/sedes/ecuador-guayaquil"
       },
       {
-        texto: "Cuenca",
-        imagen: "/images/hero/sedes/peru/sede-jesus-maria.png",
-        link: "/sedes/ecuador-cuenca"
-      }
+        texto: "Quito",
+        imagen: "/images/hero/sedes/ecuador/sede-quito.png",
+        link: "/sedes/ecuador-quito"
+      },
+      {
+        texto: "Guayaquil",
+        imagen: "/images/hero/sedes/ecuador/sede-guayaquil.png",
+        link: "/sedes/ecuador-guayaquil"
+      },
     ]
   },
   {
@@ -69,62 +74,10 @@ export const sedesData: SedesData = [
     nombre: "Panamá",
     sedes: [
       {
-        texto: "Ciudad de Panamá",
+        texto: "Panamá",
         imagen: "/images/hero/sedes/peru/sede-golf.png",
         link: "/sedes/panama"
       },
-      {
-        texto: "Colón",
-        imagen: "/images/hero/sedes/peru/sede-sur.png",
-        link: "/sedes/panama-colon"
-      },
-      {
-        texto: "David",
-        imagen: "/images/hero/sedes/peru/sede-jesus-maria.png",
-        link: "/sedes/panama-david"
-      }
-    ]
-  },
-  {
-    id: "sede-5",
-    nombre: "Chile",
-    sedes: [
-      {
-        texto: "Santiago",
-        imagen: "/images/hero/sedes/peru/sede-golf.png",
-        link: "/sedes/chile-santiago"
-      },
-      {
-        texto: "Viña del Mar",
-        imagen: "/images/hero/sedes/peru/sede-sur.png",
-        link: "/sedes/chile-vina"
-      },
-      {
-        texto: "Concepción",
-        imagen: "/images/hero/sedes/peru/sede-jesus-maria.png",
-        link: "/sedes/chile-concepcion"
-      }
-    ]
-  },
-  {
-    id: "sede-6",
-    nombre: "Costa Rica",
-    sedes: [
-      {
-        texto: "San José",
-        imagen: "/images/hero/sedes/peru/sede-golf.png",
-        link: "/sedes/costarica-sanjose"
-      },
-      {
-        texto: "Alajuela",
-        imagen: "/images/hero/sedes/peru/sede-sur.png",
-        link: "/sedes/costarica-alajuela"
-      },
-      {
-        texto: "Heredia",
-        imagen: "/images/hero/sedes/peru/sede-jesus-maria.png",
-        link: "/sedes/costarica-heredia"
-      }
     ]
   }
 ];

@@ -19,7 +19,7 @@ export const CarouselContentData = () => {
       orientation="vertical"
       className="w-full overflow-hidden"
     >
-      <CarouselContent className="h-[240px] -mb-8">
+      <CarouselContent className="h-[320px] -mb-8">
         {carouselReviews.map((review, i) => (
           <CarouselItem className="space-y-4 text-white basis-1/2 pb-8" key={i}>
               <p className="text-xl">&quot;{review.title}&quot;</p>
