@@ -22,7 +22,7 @@ export const BtnWsp = () => {
   return (
     <Link
       href="https://wa.me/51976234160"
-      className={`fixed bottom-8 right-8 bg-in-wsp rounded-full p-3 z-10 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
+      className={`fixed bottom-2 right-2 md:bottom-8 md:right-8 bg-in-wsp rounded-full p-3 z-10 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
       target="_blank"
     >
       <FaWhatsapp className="text-white text-4xl" />

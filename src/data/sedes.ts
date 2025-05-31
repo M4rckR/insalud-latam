@@ -75,7 +75,7 @@ export const sedesData: SedesData = [
     sedes: [
       {
         texto: "Panamá",
-        imagen: "/images/hero/sedes/peru/sede-golf.png",
+        imagen: "/images/hero/sedes/panama/sede-panama.png",
         link: "/sedes/panama"
       },
     ]
